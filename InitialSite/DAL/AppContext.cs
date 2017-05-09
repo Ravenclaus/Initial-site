@@ -16,6 +16,5 @@ namespace InitialSite.DAL
         public DbSet<PaymentType> PaymentTypes { get; set; }
         public DbSet<OrderCart> OrderCarts { get; set; }
 
-
     }
 }
