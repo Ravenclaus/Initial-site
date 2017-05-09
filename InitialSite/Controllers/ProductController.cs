@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InitialSite.Controllers.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,13 @@ namespace InitialSite.Controllers
 {
     public class ProductController : Controller
     {
+        readonly IProductRepository _productRepository;
+
+        public ProductController(IProductRepository ProductRepository)
+        {
+            _productRepository = ProductRepository;
+        }
+
         // GET: Product
         public ActionResult Index()
         {
