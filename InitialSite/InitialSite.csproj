@@ -238,6 +238,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Interfaces\ICustomerRepository.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DAL\AppContext.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
@@ -327,6 +328,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Customer\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
