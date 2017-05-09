@@ -237,10 +237,18 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Interfaces\ICustomerRepository.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Controllers\Interfaces\IProductRepository.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DAL\AppContext.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="DAL\ProductRepository.cs" />
+>>>>>>> Stashed changes
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
