@@ -334,12 +334,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-<<<<<<< HEAD
     <Folder Include="Views\Customer\" />
     <Folder Include="Views\Product\" />
-=======
     <Folder Include="Views\Order\" />
->>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
