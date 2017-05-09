@@ -237,18 +237,15 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Interfaces\ICustomerRepository.cs" />
-<<<<<<< Updated upstream
-=======
     <Compile Include="Controllers\Interfaces\IProductRepository.cs" />
->>>>>>> Stashed changes
-    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Interfaces\IOrderRepository.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="DAL\AppContext.cs" />
-    <Compile Include="DAL\CustomerRepository.cs" />
-<<<<<<< Updated upstream
-=======
     <Compile Include="DAL\ProductRepository.cs" />
->>>>>>> Stashed changes
+    <Compile Include="DAL\CustomerRepository.cs" />
+    <Compile Include="DAL\OrderRepository.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
@@ -332,11 +329,17 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Customer\index.cshtml" />
+    <Content Include="Views\Shared\PartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+<<<<<<< HEAD
     <Folder Include="Views\Customer\" />
     <Folder Include="Views\Product\" />
+=======
+    <Folder Include="Views\Order\" />
+>>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
