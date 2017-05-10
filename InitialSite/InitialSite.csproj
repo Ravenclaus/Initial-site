@@ -331,11 +331,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customer\index.cshtml" />
     <Content Include="Views\Shared\PartialView.cshtml" />
+    <Content Include="Views\Product\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Customer\" />
-    <Folder Include="Views\Product\" />
     <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
