@@ -18,7 +18,7 @@ namespace InitialSite.DAL
 
         public IEnumerable<Customer> GetAllCustomers()
         {
-            throw new NotImplementedException();
+            return _context.Customers;
         }
 
         public void Save(Customer newCustomer)

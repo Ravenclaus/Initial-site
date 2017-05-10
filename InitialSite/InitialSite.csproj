@@ -238,11 +238,14 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Interfaces\ICustomerRepository.cs" />
     <Compile Include="Controllers\Interfaces\IOrderRepository.cs" />
+    <Compile Include="Controllers\Interfaces\IPaymentTypeRepository.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\PaymentTypeController.cs" />
     <Compile Include="DAL\AppContext.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
     <Compile Include="DAL\OrderRepository.cs" />
+    <Compile Include="DAL\PaymentTypeRepository.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
@@ -255,6 +258,10 @@
     <Compile Include="Migrations\201705090202009_InitialCreate.cs" />
     <Compile Include="Migrations\201705090202009_InitialCreate.Designer.cs">
       <DependentUpon>201705090202009_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705100059444_PaymentTypes.cs" />
+    <Compile Include="Migrations\201705100059444_PaymentTypes.Designer.cs">
+      <DependentUpon>201705100059444_PaymentTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -328,6 +335,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customer\index.cshtml" />
     <Content Include="Views\Shared\PartialView.cshtml" />
+    <Content Include="Views\PaymentType\index.cshtml" />
     <Content Include="Views\Shared\CustomerDropDown.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -345,6 +353,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201705090202009_InitialCreate.resx">
       <DependentUpon>201705090202009_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705100059444_PaymentTypes.resx">
+      <DependentUpon>201705100059444_PaymentTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
