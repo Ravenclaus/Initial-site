@@ -12,7 +12,7 @@ namespace InitialSite.Models
         [Key]
         public int PaymentTypeId { get; set; }
         [Required]
-        public string PaymentTypeNameType { get; set; }
+        public string PaymentTypeName { get; set; }
         [Required]
         public int AccountNumber { get; set; }
         public virtual Customer Customer { get; set; }
