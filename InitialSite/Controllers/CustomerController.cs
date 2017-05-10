@@ -35,7 +35,7 @@ namespace InitialSite.Controllers
         [HttpGet]
         public ActionResult GrabAllCustomers()
         {
-            _customerRepository.GetAllCustomers().ToList();
+            ViewBag.Customers = _customerRepository.GetAllCustomers().ToList();
 
             return View("index");
         }
