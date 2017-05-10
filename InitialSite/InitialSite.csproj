@@ -238,11 +238,14 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Interfaces\ICustomerRepository.cs" />
     <Compile Include="Controllers\Interfaces\IOrderRepository.cs" />
+    <Compile Include="Controllers\Interfaces\IProductTypeRepository.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ProductTypeController.cs" />
     <Compile Include="DAL\AppContext.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
     <Compile Include="DAL\OrderRepository.cs" />
+    <Compile Include="DAL\ProductTypeRepository.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
@@ -328,10 +331,13 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customer\index.cshtml" />
     <Content Include="Views\Shared\PartialView.cshtml" />
+    <Content Include="Views\Shared\ProductTypeLablesDropdown.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AllDatabaseScriptEdits\" />
     <Folder Include="App_Data\" />
     <Folder Include="Views\Order\" />
+    <Folder Include="Views\ProductType\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

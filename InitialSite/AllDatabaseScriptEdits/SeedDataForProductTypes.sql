@@ -1,0 +1,2 @@
+﻿INSERT INTO ProductTypes (ProductLabel) 
+VALUES ('Art & Entertainment'), ('Automotive'), ('Clothing & Fashion'), ('Food'), ('Health'), ('Home Goods'), ('Outdoor & Sporting Goods Recreation'), ('Technology'), ('Tools & Appliances'), ('Toys & Games'), ('Other'); 
