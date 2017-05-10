@@ -33,11 +33,11 @@ namespace InitialSite.Controllers
         }
 
         [HttpGet]
-        public ActionResult GrabAllCustomers()
+        public PartialViewResult CustomerDropdown()
         {
-            ViewBag.Customers = _customerRepository.GetAllCustomers().ToList();
+            var allCustomers = _customerRepository.GetAllCustomers().ToList();
 
-            return View("index");
+            return PartialView("~/Views/Shared/CustomerDropdown.cshtml", allCustomers);
         }
         
       
