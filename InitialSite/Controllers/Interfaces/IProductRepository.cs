@@ -9,6 +9,6 @@ namespace InitialSite.Controllers.Interfaces
 {
     public interface IProductRepository
     {
-        void Save(Product newProduct);
+        void SaveProduct(Product newProduct);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using InitialSite.Controllers.Interfaces;
+using InitialSite.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace InitialSite.Controllers
         // GET: Product
         public ActionResult Index()
         {
-            return View();
+            return View("index/product");
         }
 
         // GET: Product/Details/5
@@ -36,17 +37,17 @@ namespace InitialSite.Controllers
 
         // POST: Product/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult CreateProduct(Product newProduct)
         {
             try
             {
-                // TODO: Add insert logic here
+                _productRepository.SaveProduct(newProduct);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Index/product");
             }
             catch
             {
-                return View();
+                return View("index/product");
             }
         }
 

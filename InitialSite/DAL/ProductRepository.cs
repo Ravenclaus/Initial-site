@@ -16,7 +16,7 @@ namespace InitialSite.DAL
             _context = context;
         }
 
-        public void Save(Product newProduct)
+        public void SaveProduct(Product newProduct)
         {
             _context.Products.Add(newProduct);
             _context.SaveChanges();
