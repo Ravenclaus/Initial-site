@@ -1,13 +1,13 @@
 ﻿@model InitialSite.Models.Product
 
 @{
-    ViewBag.Title = "Product";
+    ViewBag.Title = "Create";
 }
 
-<h2>Product</h2>
+<h2>Create</h2>
 
 
-@using (Html.BeginForm("CreateProduct", "Product", FormMethod.Post)) 
+@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     

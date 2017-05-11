@@ -244,6 +244,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\PaymentTypeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="DAL\AppContext.cs" />
     <Compile Include="DAL\ProductRepository.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
@@ -340,6 +341,11 @@
     <Content Include="Views\Shared\PartialView.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\PaymentType\index.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
+    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
