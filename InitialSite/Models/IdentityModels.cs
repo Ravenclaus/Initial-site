@@ -29,5 +29,9 @@ namespace InitialSite.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<InitialSite.Models.Customer> Customers { get; set; }
+
+        public System.Data.Entity.DbSet<InitialSite.Models.ProductType> ProductTypes { get; set; }
     }
 }

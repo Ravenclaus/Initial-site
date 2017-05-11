@@ -1,13 +1,13 @@
 ﻿@model InitialSite.Models.Customer
 
 @{
-    ViewBag.Title = "index";
+    ViewBag.Title = "Create";
 }
 
-<h2>index</h2>
+<h2>Create</h2>
 
 
-@using (Html.BeginForm("AddCustomer", "Customer", FormMethod.Post)) 
+@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
@@ -45,8 +45,6 @@
             </div>
         </div>
     </div>
-    <h1>Hello, @ViewBag.FirstName</h1>
-  
 }
 
 <div>

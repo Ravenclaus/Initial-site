@@ -235,6 +235,7 @@
     <Compile Include="App_Start\StructuremapWebApi.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Interfaces\ICustomerRepository.cs" />
     <Compile Include="Controllers\Interfaces\IProductRepository.cs" />
@@ -244,6 +245,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\PaymentTypeController.cs" />
+    <Compile Include="Controllers\ProductTypesController.cs" />
     <Compile Include="DAL\AppContext.cs" />
     <Compile Include="DAL\ProductRepository.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
@@ -340,6 +342,16 @@
     <Content Include="Views\Shared\PartialView.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\PaymentType\index.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\ProductTypes\Create.cshtml" />
+    <Content Include="Views\ProductTypes\Delete.cshtml" />
+    <Content Include="Views\ProductTypes\Details.cshtml" />
+    <Content Include="Views\ProductTypes\Edit.cshtml" />
+    <Content Include="Views\ProductTypes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

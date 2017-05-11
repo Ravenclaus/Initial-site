@@ -32,14 +32,17 @@ namespace InitialSite.Controllers
             return View("index");
         }
 
-        [HttpGet]
-        public PartialViewResult CustomerDropdown()
-        {
-            var allCustomers = _customerRepository.GetAllCustomers().ToList();
+        //[HttpGet]
+        //public PartialViewResult CustomerDropdown()
+        //{
+        //    var allCustomers = _customerRepository.GetAllCustomers().ToList();
 
-            return PartialView("~/Views/Shared/CustomerDropdown.cshtml", allCustomers);
-        }
+        //    return PartialView("~/Views/Shared/CustomerDropdown.cshtml", allCustomers);
+        //}
         
-      
+        
+
+
+
     }
 }
