@@ -339,6 +339,7 @@
     <Content Include="Views\Customer\index.cshtml" />
     <Content Include="Views\Shared\PartialView.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
+    <Content Include="Views\PaymentType\AddPaymentType.cshtml" />
     <Content Include="Views\PaymentType\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
