@@ -335,11 +335,12 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customer\index.cshtml" />
     <Content Include="Views\Shared\PartialView.cshtml" />
-    <Content Include="Views\PaymentType\index.cshtml" />
+    <Content Include="Views\PaymentType\Index.cshtml" />
     <Content Include="Views\Shared\CustomerDropDown.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\DropDown\" />
     <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>

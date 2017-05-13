@@ -20,7 +20,7 @@ namespace InitialSite.Controllers
         // GET: PaymentType
         public ActionResult Index()
         {
-            return View("index");
+            return View();
         }
 
         [HttpPost]
