@@ -21,5 +21,10 @@ namespace InitialSite.DAL
             _context.Products.Add(newProduct);
             _context.SaveChanges();
         }
+
+        //public IEnumerable<Product> GetAllProducts()
+        //{
+
+        //}
     }
 }
