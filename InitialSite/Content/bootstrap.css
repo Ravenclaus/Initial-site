@@ -4192,10 +4192,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-brand {
-  float: left;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  float: left;  
+  padding: 15px 15px;  
+  font-size: 40px;  
+  line-height: 20px;  
+  font-family:'Facebook Letter Faces'  
 }
 
 .navbar-brand:hover,
