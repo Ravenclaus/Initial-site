@@ -20,16 +20,17 @@ namespace InitialSite.Controllers
         // GET: Product
         public ActionResult Index()
         {
-            return View("index");
+            var AllProduct = _productRepository.GetAllProducts();
+            return View("index", AllProduct);
         }
 
-        [HttpGet]
-        public PartialViewResult ViewAllProducts()
-        {
-            var AllProduct = _productRepository.GetAllProducts().ToList();
+        //[HttpGet]
+        //public PartialViewResult ViewAllProducts()
+        //{
+        //    var AllProduct = _productRepository.GetAllProducts().ToList();
 
-            return PartialView("~/Views/Shared/ViewAllProducts.cshtml", AllProduct);
-        }
+        //    return PartialView("~/Views/Shared/ViewAllProducts.cshtml", AllProduct);
+        //}
 
         // GET: Product/Details/5
         public ActionResult Details(int id)
@@ -45,7 +46,7 @@ namespace InitialSite.Controllers
 
         // POST: Product/Create
         [HttpPost]
-        public ActionResult CreateProduct(Product newProduct)
+        public ActionResult Create(Product newProduct)
         {
             try
             {

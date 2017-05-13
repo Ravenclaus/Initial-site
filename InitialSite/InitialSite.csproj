@@ -339,13 +339,14 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customer\index.cshtml" />
     <Content Include="Views\Shared\PartialView.cshtml" />
-    <Content Include="Views\Product\index.cshtml" />
     <Content Include="Views\PaymentType\index.cshtml" />
     <Content Include="Views\Products\Create.cshtml" />
     <Content Include="Views\Products\Delete.cshtml" />
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Product\index.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
