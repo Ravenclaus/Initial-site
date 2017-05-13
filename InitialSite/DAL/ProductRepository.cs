@@ -22,9 +22,9 @@ namespace InitialSite.DAL
             _context.SaveChanges();
         }
 
-        //public IEnumerable<Product> GetAllProducts()
-        //{
-
-        //}
+        public IEnumerable<Product> GetAllProducts()
+        {
+            return _context.Products;
+        }
     }
 }

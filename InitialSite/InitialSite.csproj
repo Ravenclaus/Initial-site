@@ -239,11 +239,11 @@
     <Compile Include="Controllers\Interfaces\ICustomerRepository.cs" />
     <Compile Include="Controllers\Interfaces\IProductRepository.cs" />
     <Compile Include="Controllers\Interfaces\IOrderRepository.cs" />
-    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\Interfaces\IPaymentTypeRepository.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\PaymentTypeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="DAL\AppContext.cs" />
     <Compile Include="DAL\ProductRepository.cs" />
