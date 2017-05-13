@@ -16,10 +16,18 @@ namespace InitialSite.DAL
             _context = context;
         }
 
+        public IEnumerable<PaymentType> GetListOfPaymentTypes()
+        {
+            return _context.PaymentTypes;
+        }
+
+
         public void Save(PaymentType newPaymentType)
         {
             _context.PaymentTypes.Add(newPaymentType);
             _context.SaveChanges();
         }
+
+        
     }
 }

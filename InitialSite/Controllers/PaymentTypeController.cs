@@ -20,7 +20,14 @@ namespace InitialSite.Controllers
         // GET: PaymentType
         public ActionResult Index()
         {
-            return View();
+            var allPaymentTypes = _paymentTypeRepository.GetListOfPaymentTypes();
+            return View("index", allPaymentTypes);
+        }
+
+        [HttpGet]
+        public ActionResult AddPaymentType()
+        {
+            return View("AddPaymentType");
         }
 
         [HttpPost]
@@ -28,7 +35,14 @@ namespace InitialSite.Controllers
         {
             _paymentTypeRepository.Save(newPaymentType);
 
-            return View("index");
+            return RedirectToAction("index");
         }
+
+        //[HttpGet]
+        //public IEnumerable<PaymentType> GetListOfPaymentTypes(IEnumerable<PaymentType> PaymentTypes)
+        //{
+        //    var allPaymentTypes = _paymentTypeRepository.GetListOfPaymentTypes();
+        //    return allPaymentTypes;
+        //}
     }
 }

@@ -10,5 +10,7 @@ namespace InitialSite.Controllers.Interfaces
     public interface IPaymentTypeRepository
     {
         void Save(PaymentType newPaymentType);
+
+        IEnumerable<PaymentType> GetListOfPaymentTypes();
     }
 }
