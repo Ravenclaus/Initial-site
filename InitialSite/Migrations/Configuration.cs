@@ -1,5 +1,6 @@
 namespace InitialSite.Migrations
 {
+    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -26,6 +27,13 @@ namespace InitialSite.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Products.AddOrUpdate(
+                p => new { p.ProductName, p.ProductPrice }, 
+
+                new Product { ProductName = "Kleenex", ProductPrice = 2.20},
+                new Product { ProductName = "Shredded Cheese", ProductPrice = 1.00}
+                );
         }
     }
 }

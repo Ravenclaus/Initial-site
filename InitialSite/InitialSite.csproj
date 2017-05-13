@@ -237,12 +237,15 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Interfaces\ICustomerRepository.cs" />
+    <Compile Include="Controllers\Interfaces\IProductRepository.cs" />
     <Compile Include="Controllers\Interfaces\IOrderRepository.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\Interfaces\IPaymentTypeRepository.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\PaymentTypeController.cs" />
     <Compile Include="DAL\AppContext.cs" />
+    <Compile Include="DAL\ProductRepository.cs" />
     <Compile Include="DAL\CustomerRepository.cs" />
     <Compile Include="DAL\OrderRepository.cs" />
     <Compile Include="DAL\PaymentTypeRepository.cs" />
@@ -335,8 +338,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customer\index.cshtml" />
     <Content Include="Views\Shared\PartialView.cshtml" />
-    <Content Include="Views\PaymentType\Index.cshtml" />
-    <Content Include="Views\Shared\CustomerDropDown.cshtml" />
+    <Content Include="Views\Product\Product.cshtml" />
+    <Content Include="Views\PaymentType\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
