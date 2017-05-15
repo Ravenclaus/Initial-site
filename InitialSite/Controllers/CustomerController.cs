@@ -20,8 +20,13 @@ namespace InitialSite.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-           
-            return View("index");
+            var customerList = _customerRepository.GetAllCustomers();
+            return View("index", customerList);
+        }
+        [HttpGet]
+        public ActionResult AddCustomer()
+        {
+            return View("AddCustomer");
         }
 
         [HttpPost]
@@ -29,7 +34,7 @@ namespace InitialSite.Controllers
         {
             _customerRepository.Save(newCustomer);
 
-            return View("index");
+            return RedirectToAction("index");
         }
 
  

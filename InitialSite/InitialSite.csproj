@@ -336,11 +336,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Customer\index.cshtml" />
     <Content Include="Views\Shared\PartialView.cshtml" />
     <Content Include="Views\Product\Product.cshtml" />
     <Content Include="Views\PaymentType\AddPaymentType.cshtml" />
     <Content Include="Views\PaymentType\index.cshtml" />
+    <Content Include="Views\Customer\AddCustomer.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
