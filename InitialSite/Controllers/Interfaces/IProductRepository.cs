@@ -10,6 +10,5 @@ namespace InitialSite.Controllers.Interfaces
     public interface IProductRepository
     {
         void SaveProduct(Product newProduct);
-        IEnumerable<Product> GetAllProducts();
     }
 }

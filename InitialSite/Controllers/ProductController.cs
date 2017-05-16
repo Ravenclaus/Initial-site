@@ -20,17 +20,8 @@ namespace InitialSite.Controllers
         // GET: Product
         public ActionResult Index()
         {
-            var AllProduct = _productRepository.GetAllProducts();
-            return View("index", AllProduct);
+            return View("index/product");
         }
-
-        //[HttpGet]
-        //public PartialViewResult ViewAllProducts()
-        //{
-        //    var AllProduct = _productRepository.GetAllProducts().ToList();
-
-        //    return PartialView("~/Views/Shared/ViewAllProducts.cshtml", AllProduct);
-        //}
 
         // GET: Product/Details/5
         public ActionResult Details(int id)
@@ -46,17 +37,17 @@ namespace InitialSite.Controllers
 
         // POST: Product/Create
         [HttpPost]
-        public ActionResult Create(Product newProduct)
+        public ActionResult CreateProduct(Product newProduct)
         {
             try
             {
-                // TODO: Add insert logic here
                 _productRepository.SaveProduct(newProduct);
-                return RedirectToAction("index");
+
+                return RedirectToAction("Index/product");
             }
             catch
             {
-                return View("index");
+                return View("index/product");
             }
         }
 
