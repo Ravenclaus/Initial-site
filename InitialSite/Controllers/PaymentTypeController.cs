@@ -38,11 +38,26 @@ namespace InitialSite.Controllers
             return RedirectToAction("index");
         }
 
-        //[HttpGet]
-        //public IEnumerable<PaymentType> GetListOfPaymentTypes(IEnumerable<PaymentType> PaymentTypes)
-        //{
-        //    var allPaymentTypes = _paymentTypeRepository.GetListOfPaymentTypes();
-        //    return allPaymentTypes;
-        //}
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            _paymentTypeRepository.Delete(id);
+
+            return RedirectToAction("index");
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            return View("Edit", _paymentTypeRepository.GetPaymentTypeId(id));
+        }
+
+        [HttpPost]
+        public ActionResult Edit(PaymentType paymentType)
+        {
+            _paymentTypeRepository.Edit(paymentType);
+            return RedirectToAction("index");
+
+        }
     }
 }

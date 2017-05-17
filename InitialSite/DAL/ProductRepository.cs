@@ -29,7 +29,7 @@ namespace InitialSite.DAL
             return _context.Products;
         }
 
-        public void Edit Product()
+        public void EditProduct()
         {
 
         }
