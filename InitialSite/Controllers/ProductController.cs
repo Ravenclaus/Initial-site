@@ -20,7 +20,9 @@ namespace InitialSite.Controllers
         // GET: Product
         public ActionResult Index()
         {
-            return View("index/product");
+            //return View("index/product");
+            var AllProduct = _productRepository.GetAllProducts();
+            return View("index", AllProduct);
         }
 
         // GET: Product/Details/5
@@ -37,7 +39,7 @@ namespace InitialSite.Controllers
 
         // POST: Product/Create
         [HttpPost]
-        public ActionResult CreateProduct(Product newProduct)
+        public ActionResult Create(Product newProduct)
         {
             try
             {
