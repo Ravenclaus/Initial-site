@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using InitialSite.Models;
+using StructureMap;
+using System.Data.Entity;
 
 namespace InitialSite.DAL
 {
@@ -21,5 +23,11 @@ namespace InitialSite.DAL
             _context.Products.Add(newProduct);
             _context.SaveChanges();
         }
-    }
+
+        public IEnumerable<Product> GetAllProducts()
+       {
+            return _context.Products;
+       }
+
+}
 }

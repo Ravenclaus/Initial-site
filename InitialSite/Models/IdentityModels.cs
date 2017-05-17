@@ -30,6 +30,8 @@ namespace InitialSite.Models
             return new ApplicationDbContext();
         }
 
+        public System.Data.Entity.DbSet<InitialSite.Models.Product> Products { get; set; }
+
         public System.Data.Entity.DbSet<InitialSite.Models.PaymentType> PaymentTypes { get; set; }
     }
 }
