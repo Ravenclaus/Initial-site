@@ -12,5 +12,7 @@ namespace InitialSite.Controllers.Interfaces
         void SaveProduct(Product newProduct);
 
         IEnumerable<Product> GetAllProducts();
+
+        void EditProduct(Product EditedProduct);
     }
 }

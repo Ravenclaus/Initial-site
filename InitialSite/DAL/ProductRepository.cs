@@ -25,9 +25,13 @@ namespace InitialSite.DAL
         }
 
         public IEnumerable<Product> GetAllProducts()
-       {
+        {
             return _context.Products;
-       }
+        }
 
-}
+        public void Edit Product()
+        {
+
+        }
+    }
 }
